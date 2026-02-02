@@ -1,0 +1,182 @@
+{
+  "spreadsheet": {
+    "title": "Lexile Reading Text DB",
+    "sheets": [
+      {
+        "name": "READING_TEXT_MASTER",
+        "description": "메인 텍스트 데이터베이스",
+        "columns": [
+          {
+            "name": "text_id",
+            "type": "STRING",
+            "description": "고유 ID (L{band}-{genre_code}-{word_count}-{seq})",
+            "example": "L700-NAR-100-001",
+            "required": true,
+            "auto_generated": true
+          },
+          {
+            "name": "lexile_band",
+            "type": "STRING",
+            "description": "Lexile 범위",
+            "example": "700-900",
+            "required": true,
+            "validation": "CONFIG!lexile_bands"
+          },
+          {
+            "name": "lexile_score",
+            "type": "NUMBER",
+            "description": "정확한 Lexile 점수",
+            "example": 820,
+            "required": true,
+            "validation": "must be within lexile_band range"
+          },
+          {
+            "name": "age_group",
+            "type": "STRING",
+            "description": "연령대",
+            "example": "Middle School",
+            "required": true,
+            "validation": "CONFIG!age_groups"
+          },
+          {
+            "name": "grade_hint",
+            "type": "STRING",
+            "description": "학년 힌트 (한국 기준)",
+            "example": "중2",
+            "required": false
+          },
+          {
+            "name": "genre",
+            "type": "STRING",
+            "description": "장르",
+            "example": "Narrative",
+            "required": true,
+            "validation": "CONFIG!genres"
+          },
+          {
+            "name": "topic",
+            "type": "STRING",
+            "description": "주제",
+            "example": "Friendship",
+            "required": true
+          },
+          {
+            "name": "word_count",
+            "type": "NUMBER",
+            "description": "단어 수",
+            "example": 100,
+            "required": true,
+            "auto_calculated": true
+          },
+          {
+            "name": "length_type",
+            "type": "STRING",
+            "description": "길이 유형",
+            "example": "Short",
+            "required": true,
+            "validation": "CONFIG!length_types"
+          },
+          {
+            "name": "text_body",
+            "type": "STRING",
+            "description": "실제 지문 본문",
+            "example": "(reading passage text)",
+            "required": true
+          },
+          {
+            "name": "sentence_count",
+            "type": "NUMBER",
+            "description": "문장 수 (자동 계산)",
+            "example": 6,
+            "auto_calculated": true
+          },
+          {
+            "name": "avg_sentence_length",
+            "type": "NUMBER",
+            "description": "평균 문장 길이 - 단어수 (자동 계산)",
+            "example": 16.7,
+            "auto_calculated": true
+          },
+          {
+            "name": "vocabulary_band",
+            "type": "STRING",
+            "description": "CEFR 어휘 수준",
+            "example": "A2/B1",
+            "required": true,
+            "validation": "CONFIG!vocabulary_bands"
+          },
+          {
+            "name": "intended_use",
+            "type": "STRING",
+            "description": "의도된 용도",
+            "example": "수업",
+            "required": false,
+            "validation": "CONFIG!intended_uses"
+          },
+          {
+            "name": "created_date",
+            "type": "DATE",
+            "description": "생성일",
+            "example": "2026-02-01",
+            "auto_generated": true
+          },
+          {
+            "name": "notes",
+            "type": "STRING",
+            "description": "교사용 메모",
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "CONFIG",
+        "description": "드롭다운 및 검증 기준 데이터",
+        "sections": {
+          "lexile_bands": [
+            {"band": "100-300", "age_group": "Early Elementary", "grade": "초1-2", "purpose": "영어 문장 감각 형성"},
+            {"band": "300-500", "age_group": "Upper Elementary", "grade": "초3-4", "purpose": "의미 단위 읽기"},
+            {"band": "500-700", "age_group": "Transitional", "grade": "초5-6", "purpose": "문단 이해 시작"},
+            {"band": "700-900", "age_group": "Middle School", "grade": "중1-2", "purpose": "정보 이해"},
+            {"band": "900-1100", "age_group": "Upper Secondary", "grade": "중3-고1", "purpose": "논리·원인결과"},
+            {"band": "1100-1300", "age_group": "Pre-CSAT", "grade": "고2-3", "purpose": "추상 개념"},
+            {"band": "1300-1500", "age_group": "Academic", "grade": "대학 초반", "purpose": "학술 독해"}
+          ],
+          "genres": [
+            {"code": "NAR", "name": "Narrative", "thinking_type": "시간·사건"},
+            {"code": "EXP", "name": "Expository", "thinking_type": "설명"},
+            {"code": "INF", "name": "Informational", "thinking_type": "사실"},
+            {"code": "ARG", "name": "Argumentative", "thinking_type": "주장·근거"},
+            {"code": "PRO", "name": "Procedural", "thinking_type": "과정"},
+            {"code": "LIT", "name": "Literary", "thinking_type": "정서·표현"}
+          ],
+          "length_types": [
+            {"type": "Micro", "word_range": "40-60", "target": 50, "purpose": "워밍업 / 문장 훈련"},
+            {"type": "Short", "word_range": "80-120", "target": 100, "purpose": "수업용 핵심 독해"},
+            {"type": "Medium", "word_range": "170-230", "target": 200, "purpose": "정독 훈련"},
+            {"type": "Long", "word_range": "280-420", "target": 350, "purpose": "다독 / 시험 대비"}
+          ],
+          "vocabulary_bands": ["Pre-A1", "A1", "A1/A2", "A2", "A2/B1", "B1", "B1/B2", "B2", "B2/C1", "C1"],
+          "intended_uses": ["수업", "다독", "과제", "시험대비", "워밍업"],
+          "age_topic_restrictions": {
+            "Early Elementary": {"allowed": ["가족", "동물", "학교", "놀이", "음식"], "restricted": ["정치", "추상 철학", "폭력"]},
+            "Upper Elementary": {"allowed": ["가족", "동물", "학교", "자연", "취미"], "restricted": ["정치", "이념", "추상 철학"]},
+            "Middle School": {"allowed": ["관계", "사회 현상", "기술", "자연", "문화"], "restricted": ["이념 논쟁", "성인 주제"]},
+            "Upper Secondary": {"allowed": ["환경", "기술", "윤리", "사회", "과학"], "restricted": ["지나친 전문 논문"]},
+            "Academic": {"allowed": ["학술", "비평", "연구", "전문분야"], "restricted": []}
+          }
+        }
+      },
+      {
+        "name": "COVERAGE_MATRIX",
+        "description": "Genre x Length 배치 현황 자동 집계 대시보드",
+        "auto_generated": true,
+        "layout": {
+          "rows": "genre (6 genres)",
+          "columns": "length_type (4 types)",
+          "cell_value": "count of texts matching genre+length_type",
+          "filter": "lexile_band (selectable)"
+        }
+      }
+    ]
+  }
+}
