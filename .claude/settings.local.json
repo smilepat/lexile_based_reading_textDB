@@ -21,7 +21,8 @@
       "Bash(py:*)",
       "Bash(python3:*)",
       "Bash(pip3 install:*)",
-      "Bash(start \"\" \"f:\\\\lexile_based_reading_textDB\\\\Lexile_Reading_Text_DB.xlsx\")"
+      "Bash(start \"\" \"f:\\\\lexile_based_reading_textDB\\\\Lexile_Reading_Text_DB.xlsx\")",
+      "Bash(\"/c/Users/user/AppData/Local/Programs/Python/Python313/python.exe\" import_external.py)"
     ]
   }
 }
