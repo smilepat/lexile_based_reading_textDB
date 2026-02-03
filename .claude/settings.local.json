@@ -14,7 +14,14 @@
       "Bash(\"/c/Users/user/AppData/Local/Programs/Python/Python313/python.exe\" --version)",
       "Bash(\"/c/Users/user/AppData/Local/Programs/Python/Python313/python.exe\" -c \"import database as db; db.init_db\\(\\); count = db.import_csv\\(''../sheets-setup/sample-data.csv''\\); print\\(f''Imported: {count} texts''\\); print\\(f''Total: {db.get_text_count\\(\\)}''\\)\")",
       "Bash(\"/c/Users/user/AppData/Local/Programs/Python/Python313/python.exe\" -c:*)",
-      "Bash(\"/c/Users/user/AppData/Local/Programs/Python/Python313/python.exe\" run_demo.py)"
+      "Bash(\"/c/Users/user/AppData/Local/Programs/Python/Python313/python.exe\" run_demo.py)",
+      "Bash(dir:*)",
+      "Bash(where:*)",
+      "Bash(C:UsersuserAppDataLocalProgramsPythonPython313python.exe \"f:\\\\lexile_based_reading_textDB\\\\sheets-setup\\\\create_excel.py\")",
+      "Bash(py:*)",
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(start \"\" \"f:\\\\lexile_based_reading_textDB\\\\Lexile_Reading_Text_DB.xlsx\")"
     ]
   }
 }

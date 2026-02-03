@@ -54,6 +54,10 @@ function onOpen() {
       .addItem('Batch Generate (Empty Slots)', 'batchGenerateTexts')
       .addItem('Set API Key', 'setApiKey'))
     .addSeparator()
+    .addSubMenu(ui.createMenu('CSAT Question Generation')
+      .addItem('Generate Question (선택 행)', 'generateQuestionForSelectedRow')
+      .addItem('Batch Generate Questions', 'batchGenerateQuestions'))
+    .addSeparator()
     .addItem('Setup Sheets (초기 설정)', 'setupSheets')
     .addToUi();
 }

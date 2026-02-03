@@ -1,0 +1,75 @@
+text_id	lexile_band	lexile_score	age_group	grade_hint	genre	topic	word_count	length_type	text_body	sentence_count	avg_sentence_length	vocabulary_band	intended_use	created_date	notes
+L100-NAR-050-001	100-300	180	Early Elementary	초1	Narrative		50	Micro		=	=	Pre-A1	워밍업
+L100-NAR-100-001	100-300	200	Early Elementary	초1	Narrative		100	Short		=	=	A1	수업
+L100-NAR-200-001	100-300	250	Early Elementary	초2	Narrative		200	Medium		=	=	A1	수업
+L100-EXP-050-001	100-300	190	Early Elementary	초1	Expository		50	Micro		=	=	Pre-A1	워밍업
+L100-EXP-100-001	100-300	220	Early Elementary	초2	Expository		100	Short		=	=	A1	수업
+L100-PRO-050-001	100-300	170	Early Elementary	초1	Procedural		50	Micro		=	=	Pre-A1	워밍업
+L100-PRO-100-001	100-300	200	Early Elementary	초1	Procedural		100	Short		=	=	A1	수업
+L300-NAR-050-001	300-500	350	Upper Elementary	초3	Narrative		50	Micro		=	=	A1/A2	워밍업
+L300-NAR-100-001	300-500	380	Upper Elementary	초3	Narrative		100	Short		=	=	A1/A2	수업
+L300-NAR-200-001	300-500	420	Upper Elementary	초4	Narrative		200	Medium		=	=	A2	수업
+L300-NAR-350-001	300-500	450	Upper Elementary	초4	Narrative		350	Long		=	=	A2	다독
+L300-EXP-050-001	300-500	360	Upper Elementary	초3	Expository		50	Micro		=	=	A1/A2	워밍업
+L300-EXP-100-001	300-500	400	Upper Elementary	초4	Expository		100	Short		=	=	A2	수업
+L300-EXP-200-001	300-500	430	Upper Elementary	초4	Expository		200	Medium		=	=	A2	수업
+L300-INF-100-001	300-500	390	Upper Elementary	초3	Informational		100	Short		=	=	A1/A2	수업
+L300-PRO-050-001	300-500	340	Upper Elementary	초3	Procedural		50	Micro		=	=	A1/A2	워밍업
+L300-PRO-100-001	300-500	370	Upper Elementary	초3	Procedural		100	Short		=	=	A2	수업
+L300-LIT-050-001	300-500	380	Upper Elementary	초4	Literary		50	Micro		=	=	A2	워밍업
+L500-NAR-050-001	500-700	550	Transitional	초5	Narrative		50	Micro		=	=	A2/B1	워밍업
+L500-NAR-100-001	500-700	580	Transitional	초5	Narrative		100	Short		=	=	A2/B1	수업
+L500-NAR-200-001	500-700	620	Transitional	초6	Narrative		200	Medium		=	=	A2/B1	수업
+L500-NAR-350-001	500-700	660	Transitional	초6	Narrative		350	Long		=	=	B1	다독
+L500-EXP-050-001	500-700	560	Transitional	초5	Expository		50	Micro		=	=	A2	워밍업
+L500-EXP-100-001	500-700	600	Transitional	초6	Expository		100	Short		=	=	A2/B1	수업
+L500-EXP-200-001	500-700	640	Transitional	초6	Expository		200	Medium		=	=	B1	수업
+L500-INF-100-001	500-700	590	Transitional	초5	Informational		100	Short		=	=	A2/B1	수업
+L500-INF-200-001	500-700	630	Transitional	초6	Informational		200	Medium		=	=	B1	수업
+L500-ARG-200-001	500-700	670	Transitional	초6	Argumentative		200	Medium		=	=	B1	수업
+L500-PRO-050-001	500-700	540	Transitional	초5	Procedural		50	Micro		=	=	A2	워밍업
+L500-PRO-100-001	500-700	570	Transitional	초5	Procedural		100	Short		=	=	A2/B1	수업
+L500-LIT-100-001	500-700	610	Transitional	초6	Literary		100	Short		=	=	A2/B1	수업
+L500-LIT-200-001	500-700	650	Transitional	초6	Literary		200	Medium		=	=	B1	다독
+L900-NAR-050-001	900-1100	950	Upper Secondary	중3	Narrative		50	Micro		=	=	B1	워밍업
+L900-NAR-100-001	900-1100	980	Upper Secondary	중3	Narrative		100	Short		=	=	B1/B2	수업
+L900-NAR-200-001	900-1100	1020	Upper Secondary	고1	Narrative		200	Medium		=	=	B1/B2	수업
+L900-NAR-350-001	900-1100	1060	Upper Secondary	고1	Narrative		350	Long		=	=	B2	다독
+L900-EXP-050-001	900-1100	960	Upper Secondary	중3	Expository		50	Micro		=	=	B1	워밍업
+L900-EXP-100-001	900-1100	1000	Upper Secondary	고1	Expository		100	Short		=	=	B1/B2	수업
+L900-EXP-200-001	900-1100	1040	Upper Secondary	고1	Expository		200	Medium		=	=	B2	수업
+L900-EXP-350-001	900-1100	1080	Upper Secondary	고1	Expository		350	Long		=	=	B2	시험대비
+L900-INF-100-001	900-1100	990	Upper Secondary	중3	Informational		100	Short		=	=	B1/B2	수업
+L900-INF-200-001	900-1100	1030	Upper Secondary	고1	Informational		200	Medium		=	=	B2	수업
+L900-INF-350-001	900-1100	1070	Upper Secondary	고1	Informational		350	Long		=	=	B2	시험대비
+L900-ARG-100-001	900-1100	1010	Upper Secondary	고1	Argumentative		100	Short		=	=	B1/B2	수업
+L900-ARG-200-001	900-1100	1050	Upper Secondary	고1	Argumentative		200	Medium		=	=	B2	수업
+L900-ARG-350-001	900-1100	1090	Upper Secondary	고1	Argumentative		350	Long		=	=	B2	시험대비
+L900-PRO-100-001	900-1100	970	Upper Secondary	중3	Procedural		100	Short		=	=	B1	수업
+L900-LIT-100-001	900-1100	1000	Upper Secondary	고1	Literary		100	Short		=	=	B1/B2	수업
+L900-LIT-200-001	900-1100	1040	Upper Secondary	고1	Literary		200	Medium		=	=	B2	다독
+L900-LIT-350-001	900-1100	1080	Upper Secondary	고1	Literary		350	Long		=	=	B2	시험대비
+L1100-NAR-100-001	1100-1300	1150	Pre-CSAT	고2	Narrative		100	Short		=	=	B2	수업
+L1100-NAR-200-001	1100-1300	1200	Pre-CSAT	고2	Narrative		200	Medium		=	=	B2	수업
+L1100-NAR-350-001	1100-1300	1250	Pre-CSAT	고3	Narrative		350	Long		=	=	B2/C1	시험대비
+L1100-EXP-100-001	1100-1300	1160	Pre-CSAT	고2	Expository		100	Short		=	=	B2	수업
+L1100-EXP-200-001	1100-1300	1210	Pre-CSAT	고2	Expository		200	Medium		=	=	B2	수업
+L1100-EXP-350-001	1100-1300	1260	Pre-CSAT	고3	Expository		350	Long		=	=	B2/C1	시험대비
+L1100-INF-100-001	1100-1300	1170	Pre-CSAT	고2	Informational		100	Short		=	=	B2	수업
+L1100-INF-200-001	1100-1300	1220	Pre-CSAT	고3	Informational		200	Medium		=	=	B2/C1	수업
+L1100-INF-350-001	1100-1300	1270	Pre-CSAT	고3	Informational		350	Long		=	=	B2/C1	시험대비
+L1100-ARG-100-001	1100-1300	1180	Pre-CSAT	고2	Argumentative		100	Short		=	=	B2	수업
+L1100-ARG-200-001	1100-1300	1230	Pre-CSAT	고3	Argumentative		200	Medium		=	=	B2/C1	수업
+L1100-ARG-350-001	1100-1300	1280	Pre-CSAT	고3	Argumentative		350	Long		=	=	B2/C1	시험대비
+L1100-PRO-100-001	1100-1300	1150	Pre-CSAT	고2	Procedural		100	Short		=	=	B2	수업
+L1100-LIT-100-001	1100-1300	1170	Pre-CSAT	고2	Literary		100	Short		=	=	B2	수업
+L1100-LIT-200-001	1100-1300	1220	Pre-CSAT	고3	Literary		200	Medium		=	=	B2/C1	다독
+L1100-LIT-350-001	1100-1300	1270	Pre-CSAT	고3	Literary		350	Long		=	=	B2/C1	시험대비
+L1300-EXP-200-001	1300-1500	1350	Academic	대학1	Expository		200	Medium		=	=	C1	수업
+L1300-EXP-350-001	1300-1500	1400	Academic	대학1	Expository		350	Long		=	=	C1	과제
+L1300-INF-200-001	1300-1500	1360	Academic	대학1	Informational		200	Medium		=	=	C1	수업
+L1300-INF-350-001	1300-1500	1420	Academic	대학1	Informational		350	Long		=	=	C1	과제
+L1300-ARG-200-001	1300-1500	1380	Academic	대학1	Argumentative		200	Medium		=	=	C1	수업
+L1300-ARG-350-001	1300-1500	1440	Academic	대학1	Argumentative		350	Long		=	=	C1	과제
+L1300-LIT-200-001	1300-1500	1370	Academic	대학1	Literary		200	Medium		=	=	B2/C1	다독
+L1300-LIT-350-001	1300-1500	1430	Academic	대학1	Literary		350	Long		=	=	C1	과제
